@@ -11,3 +11,10 @@ for review in reviews:
 
 average = sum_lenth / len(reviews) #留言平均長度
 print('留言平均長度為', average)
+
+#清單的篩選
+new = []
+for r in reviews:
+	if len(r) < 100:
+		new.append(r)
+print('長度低於100的留言有', len(new), '筆')
