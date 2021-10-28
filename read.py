@@ -18,3 +18,10 @@ for r in reviews:
 	if len(r) < 100:
 		new.append(r)
 print('長度低於100的留言有', len(new), '筆')
+
+#篩選有"good"的留言
+good = []
+for r in reviews:
+	if 'good' in r:
+		good.append(r)
+print('包含"good"的留言有', len(good), '筆')
